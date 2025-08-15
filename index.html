@@ -3,99 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
-<header style="position: sticky;">
-    <div class="nav">
-        <nav class="navigation">
-            <div class="navlinks">
-            <div class="logo">Khafsa</div>
-            <div class="home">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-    </div>
-</header>
 <body>
-    <section class="first" id="about">
-        <div class="con">
-        <img class="profile" src="Photos/profile.jpg"/>
-    <h1 style="font-size: 70px; font-weight: bold;">Hi, I'm Khafsa!</h1>
-    <h3 style="font-size: 35px;">UI/UX Designer</h3>
-    <h4 style="font-size: 20px;">I'm a passionate UI/UX designer who loves creating beautiful, user-friendly digital experiences. I believe design should be both functional and delightful! ✨</h4>
-    <p>When I'm not designing, you can find me exploring new creative trends, sipping coffee, and turning complex problems into simple, elegant solutions! 🎨☕</p>
-    <button class="view" style="border-radius: 20px; border: 1px white; cursor: pointer; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); height: 40px; width: 150px;"><a href="#projects" style="text-decoration: none;"> View My Work </a></button>
-    </div>
-    </section>
-    <section class="projects" id="projects">
-        <div class="intro">
-        <h1 style="color: rgb(127, 46, 202); font-size: 40px;">My Projects ✨</h1>
-        <p>Here are some of my favorite projects where I've crafted delightful user experiences</p>
+<main>    
+<header class="sticky top-0 z-50 shadow-md">
+    <div class="bg-white h-16 flex items-center justify-between px-5 ">
+        <div class="logo">
+            <h1 class="text-pink-500 font-bold text-2xl ">Khafsa</h1>
         </div>
-        <h2 style="text-align: center;">Website Designs</h2>
-        <div class="web">
-            
+        <nav class="flex items-center justify-between space-x-4 ">
+            <a href="#about" class="hover:underline">About Me</a>
+            <a href="#projects" class="hover:underline">Projects</a>
+            <a href="#contacts" class="hover:underline">Contact</a>
         
-        <div class="wee">
-        <div class="img1">
-           <a href="#"><img src="Photos/p1.png" alt="img" style="width: 700px; border-top-right-radius: 25px ;border-top-left-radius: 25px;"/></a> 
-        </div>
-        <div class="img1words">
-            <h2 style="padding: 10px;">Beats Headphones & Speakers Website</h2>
-            <p style="padding: 10px;">
-A sleek, responsive website designed to highlight the premium quality and iconic style of Beats headphones and speakers. The design combines bold visuals, smooth transitions, and intuitive navigation to create an engaging user experience. Product pages are crafted to showcase features, specs, and aesthetics while maintaining a clean and modern layout. This project reflects my focus on UI/UX design principles and front-end development, delivering a visually compelling and user-friendly digital experience.</p>
-        </div>
-        </div>
-         </div>
-         <div class="mobile">
-            <h2 style="text-align: center;">Mobile Designs</h2>
-            <div class="one">
-                <div class="bank">
-                <div class="img2">
-                    <a href="#">
-                        <img src="Photos/p2.png" alt="photo" style="height: 370px; border-top-left-radius: 25px;"/><img src="Photos/p4.png" alt="photo" style="height: 370px;border-top-right-radius: 25px;"/>
-                    </a>
-                </div>
-                <div class="img2words">
-                    <h2>Bank Wallets</h2>
-                    <p>A clean and secure web interface designed for managing all your bank cards and transaction histories in one place. The design focuses on clarity, trust, and ease of use, allowing users to store multiple card details and view real-time transaction records effortlessly. This project emphasizes data organization, intuitive dashboards, and responsive layouts, combining modern UI/UX principles with a user-centric approach to financial management.</p>
+        </nav>
+</header>
 
-                </div>
-                </div>
-                <div class="bank">
-                <div class="img3">
-                    <a href="#">
-                        <img src="Photos/p3.png" alt="photo" style="height: 370px;border-top-left-radius: 25px;"/><img src="Photos/p5.png" alt="photo" style="height: 370px;border-top-right-radius: 25px;"/></a>
-                </div>
-                <div class="img3words">
-                    <h2>Best Bites</h2>
-                    <p>An inviting and user-friendly website designed to teach users how to cook delicious meals step-by-step. Best Bites features visually appealing recipe cards, categorized meal types, instructional videos, and easy-to-follow cooking guides. The design emphasizes accessibility and aesthetics, making learning to cook fun and approachable for all skill levels. This project showcases my ability to combine UI design with content-rich layouts for an engaging and educational user experience.</p>
+<section class="first" id="about">
+    <div class="items-center justify-center flex flex-col bg-gradient-to-r from-purple-500 to-pink-500 h-screen text-white">
+        <img class="rounded-full w-25 h-25 border-2 border-white mt-5 shadow-lg " src="Photos/profile.jpg"/>
+        <h1 class="font-bold text-3xl mt-5 md:text-7xl md:mt-8 " >Hi, I'm Khafsa!</h1>
+        <h3  class="text-2xl mt-5 md:text-4xl md:mt-8">UI/UX Designer</h3>
+        <h4 class="text-lg mt-5 px-3 md:text-1xl">I'm a passionate UI/UX designer who loves creating beautiful, user-friendly digital experiences. I believe design should be both functional and delightful! ✨</h4>
+        <p class="text-sm mt-3 px-5 mb-5">When I'm not designing, you can find me exploring new creative trends, sipping coffee, and turning complex problems into simple, elegant solutions! 🎨☕</p>
+        <button class="text-center rounded-xl cursor-pointer bg-white text-black shadow-lg w-fit h-10 p-3 mb-5"><a href="#projects" > View My Work 🚀 </a></button>
+    </div>
+</section>
+<section class="flex flex-col justify-center items-center bg-teal-50" id="projects">
+        <div class="intro text-center">
+        <h1 class="text-4xl mt-5 font-bold text-purple-600" >My Projects ✨</h1>
+        <p class="mt-3 text-lg">Here are some of my favorite projects where I've crafted delightful user experiences</p>
+        </div>
+        <div>
+        <h2 class="text-center text-lg font-bold" >Website Designs</h2>
+         <div class="shadow-lg bg-white rounded-lg p-5 m-5 md:w-200">
+           <img src="Photos/p1.png" alt="img" class="rounded-xl " />
+           <div class="flex justify-between"> 
+            <h2 class="font-bold mt-3">Beats Headphones & Speakers Website</h2>
+            <button class="bg-amber-700 text-white rounded-lg mt-3 p-2 transform-scale-100 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                <a href="https://www.figma.com/proto/USHuSIvQe0SKhK4jURaZqd/Beats?node-id=1-2&starting-point-node-id=1%3A2&t=DE8oPt3bHxCgJV2x-1" target="_blank" class="text-white">View Project</a></button>
+            </div>
+            <p class="mt-1">
+A sleek, responsive website designed to highlight the premium quality and iconic style of Beats headphones and speakers. The design combines bold visuals, smooth transitions, and intuitive navigation to create an engaging user experience. Product pages are crafted to showcase features, specs, and aesthetics while maintaining a clean and modern layout. This project reflects my focus on UI/UX design principles and front-end development, delivering a visually compelling and user-friendly digital experience.</p>
+         </div>
+        </div>
+        <div class="mobile">
+            <h2 class="text-center text-lg font-bold" >Mobile Designs</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center  gap-5 p-5">
+               <div class="shadow-lg p-5 rounded-lg bg-white"> 
+                 <div class="grid grid-cols-2 gap-0 ">
+                    <img src="Photos/p2.png" class="w-full object-cover rounded-l-xl">
+                    <img src="Photos/p2.png" class="w-full object-cover rounded-r-xl">
+                 </div>
+                 <div class="img2words">
+                    <div class="flex justify-between">
+                      <h2 class="font-bold mt-3">Bank Wallets</h2>
+                      <button class="bg-amber-700 text-white rounded-lg mt-3 p-2 transform-scale-100 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <a href="https://www.figma.com/proto/X0BjvAR6IRlWSziWAxjqa8/Bank-Wallets?node-id=1-2&starting-point-node-id=1%3A2&t=xycbfKjlmbiuVx8w-1" target="_blank" class="text-white">View Project</a></button>
                     </div>
+                    <p class="mt-1">A clean and secure web interface designed for managing all your bank cards and transaction histories in one place. The design focuses on clarity, trust, and ease of use, allowing users to store multiple card details and view real-time transaction records effortlessly. This project emphasizes data organization, intuitive dashboards, and responsive layouts, combining modern UI/UX principles with a user-centric approach to financial management.</p>
+
+                 </div>
+                </div>
+                
+                <div class="shadow-lg p-5 rounded-lg bg-white">
+                  <div class="grid grid-cols-2 gap-0 ">
+                    <img src="Photos/p3.png" class="w-full object-cover rounded-l-xl">
+                    <img src="Photos/p5.png" class="w-full  object-cover rounded-r-xl">
+                  </div>
+                  <div class="img3words">
+                    <div class="flex justify-between">
+                    <h2 class=" font-bold mt-3">Best Bites</h2>
+                    <button class="bg-amber-700 text-white rounded-lg mt-3 p-2 transform-scale-100 hover:scale-105 transition-transform duration-300 cursor-pointer">
+                        <a href="https://www.figma.com/proto/GDQMXFMx8goeCu3ShzNrvs/Best-bites?node-id=1-2&starting-point-node-id=1%3A2&t=luABuMiZQ2kk89Pu-1" target="_blank" class="text-white">View Project</a></button>
+                    </div>
+                    <p class="mt-1">An inviting and user-friendly website designed to teach users how to cook delicious meals step-by-step. Best Bites features visually appealing recipe cards, categorized meal types, instructional videos, and easy-to-follow cooking guides. The design emphasizes accessibility and aesthetics, making learning to cook fun and approachable for all skill levels. This project showcases my ability to combine UI design with content-rich layouts for an engaging and educational user experience.</p>
+                  </div>
+                </div>  
             </div>
             
          </div>
-         <p style="text-align: center;">Want to see more of my Work lets connect</p>
+         <p style="text-align: center;">Want to see more of my Work lets connect🤝</p>
     </section>
-    <section class="connect" id="contacts">
-        <h1 style="text-align: center; color: blueviolet; font-size: 40px;">Let's Connect! </h1>
-        <p style="text-align: center;">I'm always excited to collaborate on new projects and meet fellow creatives!</p>
-        <div class="about">
-            <div class="box">
-            <div class="git">
+    <section class="bg-gradient-to-r from-purple-300 to-pink-200" id="contacts">
+    <div class="flex flex-col justify-center items-center h-screen p-5">
+            
+        <h1 class="text-center text-purple-600 text-3xl  font-bold md:text-5xl md:mb-5">Let's Connect! </h1>
+        <p class="text-center text-lg md:mb-5" >I'm always excited to collaborate on new projects and meet fellow creatives!</p>
+        <div class="flex justify-center items-center gap-10 flex-wrap p-5">
+            
+            <div class="shadow-lg p-5 rounded-lg text-center bg-white w-55 h-35 transform-scale-100 hover:scale-105 transition-transform duration-300">
+                <i class="fa-solid fa-envelope-circle-check text-2xl text-pink-500"></i>
+                <a href="mailto:khafsalulela@gmail.com">
                 <h4>Email</h4>
-                <p>khafsalulela@gmail.com</p>
+                <p>khafsalulela@gmail.com</p> </a>
             </div>
-            <div class="git">
-                <h4>Phone</h4>
-                <p>0677002588</p>
-            </div>
-            <div class="git">
+            
+            <div class="shadow-lg p-5 rounded-lg text-center bg-white w-55 h-35 transform-scale-100 hover:scale-105 transition-transform duration-300 ">
+                <i class="fa-brands fa-github text-2xl text-gray-700"></i>
             <a href="https://github.com/Khafsalulela" target="_blank" style="text-decoration: none; color: black;">
             
                 <h4>Github</h4>
@@ -104,16 +113,18 @@ A sleek, responsive website designed to highlight the premium quality and iconic
             </a>
             </div>
         </div>
-        <div class="last">
-        <div class="chat">
-            <h2>Let's Chat Over Coffee!</h2>
-            <p>Whether you have a project in mind, want to collaborate, or just want to say hi, I'd love to hear from you! Drop me a message and let's create something amazing together</p>
-            <div class="lastt">
-                <button class="email">Send me an email</button>
-                <button class="gitt"><a href="https://github.com/Khafsalulela" target="_blank" style="text-decoration: none; color: white;"> Check my Github </a></button>
+        <div class="text-center shadow-lg p-5 bg-white rounded-xl md:mt-5 md:h-40">
+            <h2 class="text-lg">♨️Let's Chat Over Coffee!♨️</h2>
+            <p class="mt-3">Whether you have a project in mind, want to collaborate, or just want to say hi, I'd love to hear from you! Drop me a message and let's create something amazing together</p>
+            <div class="flex justify-center items-center gap-3 mt-5 mb-3">
+                <button class="bg-pink-500 p-1 text-white rounded-xl transform-scale-100 hover:scale-105 transition-transform duration-300 cursor-pointer"> <a href="mailto:khafsalulela@gmail.com"><i class="fa-regular fa-paper-plane text-white p-1"></i> Send me an email </a></button>
+                <button class="bg-gray-600 p-1 rounded-xl transform-scale-100 hover:scale-105 transition-transform duration-300 cursor-pointer"><a href="https://github.com/Khafsalulela" target="_blank" class="text-white"> <i class="fa-brands fa-github p-1"></i> Check my Github </a></button>
             </div>
             </div>
         </div>
+    </div>    
     </section>
+
 </body>
+</main>
 </html>
